@@ -1,3 +1,40 @@
+
+### サイトURL
+
+https://job-app2021.herokuapp.com/
+
+## 開発概要
+
+### 環境
+
+開発人数:1人
+
+期間:2週間(40時間くらい)
+
+フレームワーク:Laravel、Bootstrap
+
+言語:php、HTML、CSS
+
+DB:MySQL
+
+デプロイ:heroku
+
+メール:Gメール
+
+## アプリ説明
+
+シンプルな求人サイトです。
+
+チャット機能がまだ未搭載のため求人を投稿した人はユーザーが応募した際に来るメールにあるメールアドレスからやり取りを始めます
+
+my求人から投稿した求人の閲覧、削除ができます。
+
+プロフィールから求人に応募した際に相手に送るデータを書きます。
+
+アピールポイントを書けるので資格や経験を企業にアピールしましょう。
+
+検索機能は工事中です、、、
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
