@@ -21,7 +21,9 @@ class CreateJoboffersTable extends Migration
             $table->string('address');
             $table->string('working_status');
             $table->string('salary');
-            $table->string('jobfeature')->nullable();
+            $table->string('jobfeature1')->nullable();
+            $table->string('jobfeature2')->nullable();
+            $table->string('jobfeature3')->nullable();
             $table->string('details')->nullable();
             $table->timestamps();
         });

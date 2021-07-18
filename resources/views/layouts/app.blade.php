@@ -26,9 +26,9 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
                 </a>
-                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
-                </button> -->
+                </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
@@ -63,16 +63,16 @@
                                     </a>
 
                                     <a class="dropdown-item" href="{{ route('jobofferform') }}">
-                                        {{ __('求人掲載') }}
+                                        {{ __('求人掲載する') }}
                                     </a>
 
                                     <a class="dropdown-item" href="{{ route('myjoboffer') }}">
-                                        {{ __('MyJobOffer') }}
+                                        {{ __('my求人') }}
                                     </a>
 
-                                    <a class="dropdown-item" href="{{ route('myjobentry') }}">
+                                    <!-- <a class="dropdown-item" href="{{ route('myjobentry') }}">
                                         {{ __('MyJobEntry') }}
-                                    </a>
+                                    </a> -->
 
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();

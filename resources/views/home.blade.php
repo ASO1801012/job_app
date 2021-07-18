@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
           <!-- フラッシュメッセージ -->
           @if (session('flash_message'))
-            <div class="flash_message bg-success text-center py-3 my-3">
+            <div class="card flash_message bg-success text-center py-3 my-3">
                 {{ session('flash_message') }}
             </div>
         @endif
@@ -30,11 +30,11 @@
 
             <div class="row justify-content-center" style="margin:10px">
                 <div class="col-md-8">
-                    {{Form::open(['url' => '/jobserach', 'files' => false])}}
+                    {{Form::open(['url' => '/jobsearch', 'files' => false])}}
                     {{Form::token()}}
 
                     <div class="form-group row">
-                        <div class="col-md-2 mb-3">
+                        <div class="col-md-2 mb-1">
                             {{Form::label('address','勤務地')}}
                         </div>
                         <div class="col-md-10">
@@ -43,7 +43,9 @@
                     </div>
 
                     <div class="form-group row">
-                        <legend class="col-form-label mb-3">雇用形態</legend>
+                    <div class="col-md-2 mb-1">
+                            {{Form::label('working_status','雇用形態')}}
+                        </div>
                         <div class="col-md-10">
                             <div class="custom-control custom-radio custom-control-inline">
                                 {{Form::radio('working_status', '正社員', true, ['class'=>'custom-control-input','id'=>'working_status1'])}}
@@ -64,14 +66,16 @@
                         <div class="col-md-2 mb-3">
                             {{Form::label('salary','給与')}}
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-6">
                             {{Form::number('salary', null, ['class' => 'form-control','id' => 'salary','placeholder' => '給与'])}}
                             <p>円以上</p>
                         </div>
                     </div>
 
                     <div class="form-group row">
-                        <div class="col-md-2 mb-3">特徴</div>
+                        <div class="col-md-2 mb-3">
+                            {{Form::label('feature','特徴')}}
+                        </div>
                         <div class="col-md-10">
                             <div class="custom-control custom-checkbox custom-control-inline">
                                 {{Form::checkbox('feature', '残業なし', false, ['class'=>'custom-control-input','id'=>'feature1'])}}
@@ -90,7 +94,8 @@
 
                     <div class="form-group row">
                         <div class="col-sm-12">
-                            {{Form::submit('検索', ['class'=>'btn btn-primary btn-block'])}}
+                            <!-- {{Form::submit('検索', ['class'=>'btn btn-primary btn-block'])}} -->
+                            <p>検索機能工事中</p>
                         </div>
                     </div>
 

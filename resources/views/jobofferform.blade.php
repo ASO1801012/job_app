@@ -56,20 +56,16 @@
                 <div class="col-md-2 mb-3">特徴</div>
                 <div class="col-md-10">
                     <div class="custom-control custom-checkbox custom-control-inline">
-                        {{Form::checkbox('feature', '残業なし', false, ['class'=>'custom-control-input','id'=>'feature1'])}}
+                        {{Form::checkbox('feature1', '残業なし', false, ['class'=>'custom-control-input','id'=>'feature1'])}}
                         {{Form::label('feature1','残業なし',['class'=>'custom-control-label'])}}
                     </div>
                     <div class="custom-control custom-checkbox custom-control-inline">
-                        {{Form::checkbox('feature', '土日休み', false, ['class'=>'custom-control-input','id'=>'feature2'])}}
+                        {{Form::checkbox('feature2', '土日休み', false, ['class'=>'custom-control-input','id'=>'feature2'])}}
                         {{Form::label('feature2','土日休み',['class'=>'custom-control-label'])}}
                     </div>
                     <div class="custom-control custom-checkbox custom-control-inline">
-                        {{Form::checkbox('feature', '年齢不問', false, ['class'=>'custom-control-input','id'=>'feature3'])}}
+                        {{Form::checkbox('feature3', '年齢不問', false, ['class'=>'custom-control-input','id'=>'feature3'])}}
                         {{Form::label('feature3','年齢不問',['class'=>'custom-control-label'])}}
-                    </div>
-                    <div class="custom-control custom-checkbox custom-control-inline">
-                        {{Form::checkbox('feature', '短期', false, ['class'=>'custom-control-input','id'=>'feature4'])}}
-                        {{Form::label('feature4','短期',['class'=>'custom-control-label'])}}
                     </div>
                 </div>
             </div>

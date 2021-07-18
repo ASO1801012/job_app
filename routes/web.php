@@ -29,7 +29,7 @@ Route::get('/jobofferform', [App\Http\Controllers\SystemController::class, 'jobo
 
 Route::post('/joboffersend', [App\Http\Controllers\SystemController::class, 'joboffersend'])->name('joboffersend');
 
-Route::post('/jobserach', [App\Http\Controllers\SystemController::class, 'jobserach'])->name('jobserach');
+Route::post('/jobsearch', [App\Http\Controllers\SystemController::class, 'jobsearch'])->name('jobsearch');
 
 Route::get('/jobpage/{id}', [App\Http\Controllers\SystemController::class, 'jobpage'])->name('jobpage');
 
@@ -38,6 +38,8 @@ Route::get('/myjoboffer', [App\Http\Controllers\SystemController::class, 'myjobo
 Route::get('/myjobentry', [App\Http\Controllers\SystemController::class, 'myjobentry'])->name('myjobentry');
 
 Route::post('/entrypage/{id}', [App\Http\Controllers\SystemController::class, 'entrypage'])->name('entrypage');
+
+Route::post('/jobdelete/{id}', [App\Http\Controllers\SystemController::class, 'jobdelete'])->name('jobdelete');
 
 Route::post('/jobentry/{id}', [App\Http\Controllers\SystemController::class, 'jobentry'])->name('jobentry');
 
